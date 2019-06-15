@@ -1,16 +1,14 @@
-package com.example.springframeworklearn.classPathXmlApplicationContextUsage;
+package com.example.springframeworklearn.autowire;
 
 import com.example.springframeworklearn.HelloWorld;
-import org.springframework.beans.factory.annotation.Autowired;
 
-/**
+/**未使用@Autowire,而且xml中也没有写<property></property>
  * @author:tianhaolin
  * @version:1.0
  */
 public class User {
 
     private HelloWorld helloWorld;
-
     private Name name;
 
     private static String value;

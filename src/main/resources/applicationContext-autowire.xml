@@ -10,10 +10,14 @@
         http://www.springframework.org/schema/aop
         http://www.springframework.org/schema/aop/spring-aop.xsd">
 
-    <context:component-scan base-package="com.example.springframeworklearn.classPathXmlApplicationContextUsage">
-    </context:component-scan>
+    <context:component-scan base-package="com.example.springframeworklearn.autowire"/>
 
-    <bean id="user" class="com.example.springframeworklearn.classPathXmlApplicationContextUsage.UserFactoryBean">
+    <bean id="user" class="com.example.springframeworklearn.autowire.User" lazy-init="true" autowire="byType">
+    </bean>
+
+    <bean id="helloWorld" class="com.example.springframeworklearn.HelloWorld">
+        <property name="str" value="I'm HelloWorld.class">
+        </property>
     </bean>
 
 </beans>
