@@ -1,11 +1,11 @@
-package com.example.springframeworklearn.applicationContextAwareUsage;
+package com.example.springframeworklearn.ioc.applicationContextAwareUsage;
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Component;
 
-/**User没有使用@Autowire注入,xml中也没有使用autowire和<property></property>;完成了属性注入
+/**User没有使用@Autowire注入,xml中也没有使用autowire和<property></property>
  * @author:tianhaolin
  * @version:1.0
  */

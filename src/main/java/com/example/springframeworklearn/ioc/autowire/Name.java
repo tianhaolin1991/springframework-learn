@@ -1,4 +1,4 @@
-package com.example.springframeworklearn.autowire;
+package com.example.springframeworklearn.ioc.autowire;
 
 import org.springframework.stereotype.Component;
 

@@ -10,10 +10,10 @@
         http://www.springframework.org/schema/aop
         http://www.springframework.org/schema/aop/spring-aop.xsd">
 
-    <context:component-scan base-package="com.example.springframeworklearn.classPathXmlApplicationContextUsage">
+    <context:component-scan base-package="com.example.springframeworklearn.ioc.classPathXmlApplicationContextUsage">
     </context:component-scan>
 
-    <bean id="user" class="com.example.springframeworklearn.classPathXmlApplicationContextUsage.UserFactoryBean">
+    <bean id="user" class="com.example.springframeworklearn.ioc.classPathXmlApplicationContextUsage.UserFactoryBean">
     </bean>
 
 </beans>

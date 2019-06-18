@@ -1,6 +1,6 @@
-package com.example.springframeworklearn.autowire;
+package com.example.springframeworklearn.ioc.autowire;
 
-import com.example.springframeworklearn.HelloWorld;
+import com.example.springframeworklearn.ioc.HelloWorld;
 
 /**未使用@Autowire,而且xml中也没有写<property></property>
  * @author:tianhaolin

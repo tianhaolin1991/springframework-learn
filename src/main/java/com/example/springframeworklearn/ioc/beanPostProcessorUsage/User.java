@@ -1,4 +1,4 @@
-package com.example.springframeworklearn.beanPostProcessorUsage;
+package com.example.springframeworklearn.ioc.beanPostProcessorUsage;
 
 /**User实现了NameInit接口
  * @author:tianhaolin

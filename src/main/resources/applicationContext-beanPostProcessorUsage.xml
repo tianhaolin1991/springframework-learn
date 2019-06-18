@@ -10,12 +10,12 @@
         http://www.springframework.org/schema/aop
         http://www.springframework.org/schema/aop/spring-aop.xsd">
 
-    <context:component-scan base-package="com.example.springframeworklearn.beanPostProcessorUsage"/>
+    <context:component-scan base-package="com.example.springframeworklearn.ioc.beanPostProcessorUsage"/>
 
-    <bean id="user" class="com.example.springframeworklearn.beanPostProcessorUsage.User">
+    <bean id="user" class="com.example.springframeworklearn.ioc.beanPostProcessorUsage.User">
     </bean>
 
-    <bean id="customer" class="com.example.springframeworklearn.beanPostProcessorUsage.Customer">
+    <bean id="customer" class="com.example.springframeworklearn.ioc.beanPostProcessorUsage.Customer">
 
     </bean>
 

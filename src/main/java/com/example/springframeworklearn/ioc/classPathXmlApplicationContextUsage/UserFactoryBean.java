@@ -1,4 +1,4 @@
-package com.example.springframeworklearn.classPathXmlApplicationContextUsage;
+package com.example.springframeworklearn.ioc.classPathXmlApplicationContextUsage;
 
 import org.springframework.beans.factory.FactoryBean;
 

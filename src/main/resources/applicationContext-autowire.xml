@@ -10,12 +10,12 @@
         http://www.springframework.org/schema/aop
         http://www.springframework.org/schema/aop/spring-aop.xsd">
 
-    <context:component-scan base-package="com.example.springframeworklearn.autowire"/>
+    <context:component-scan base-package="com.example.springframeworklearn.ioc.autowire"/>
 
-    <bean id="user" class="com.example.springframeworklearn.autowire.User" lazy-init="true" autowire="byType">
+    <bean id="user" class="com.example.springframeworklearn.ioc.autowire.User" lazy-init="true" autowire="byType">
     </bean>
 
-    <bean id="helloWorld" class="com.example.springframeworklearn.HelloWorld">
+    <bean id="helloWorld" class="com.example.springframeworklearn.ioc.HelloWorld">
         <property name="str" value="I'm HelloWorld.class">
         </property>
     </bean>

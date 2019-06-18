@@ -10,11 +10,11 @@
         http://www.springframework.org/schema/aop
         http://www.springframework.org/schema/aop/spring-aop.xsd">
 
-    <bean id="helloWorld" lazy-init="true" class="com.example.springframeworklearn.HelloWorld">
+    <bean id="helloWorld" lazy-init="true" class="com.example.springframeworklearn.ioc.HelloWorld">
         <property name="str" value="HelloWorld"/>
     </bean>
 
-    <bean id="user" lazy-init="true" class="com.example.springframeworklearn.classPathXmlApplicationContextUsage.User" init-method="toString">
+    <bean id="user" lazy-init="true" class="com.example.springframeworklearn.ioc.classPathXmlApplicationContextUsage.User" init-method="toString">
         <property name="helloWorld" ref="helloWorld"/>
     </bean>
 

@@ -1,7 +1,6 @@
-package com.example.springframeworklearn.classPathXmlApplicationContextUsage;
+package com.example.springframeworklearn.ioc.classPathXmlApplicationContextUsage;
 
-import com.example.springframeworklearn.HelloWorld;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.example.springframeworklearn.ioc.HelloWorld;
 
 /**
  * @author:tianhaolin

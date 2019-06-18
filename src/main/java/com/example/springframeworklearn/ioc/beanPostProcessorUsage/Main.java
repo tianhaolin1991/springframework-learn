@@ -1,4 +1,4 @@
-package com.example.springframeworklearn.beanPostProcessorUsage;
+package com.example.springframeworklearn.ioc.beanPostProcessorUsage;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

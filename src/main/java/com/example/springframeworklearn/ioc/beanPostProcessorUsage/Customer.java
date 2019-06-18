@@ -1,4 +1,4 @@
-package com.example.springframeworklearn.beanPostProcessorUsage;
+package com.example.springframeworklearn.ioc.beanPostProcessorUsage;
 
 /**Customer没有实现NameInit接口
  * @author:tianhaolin

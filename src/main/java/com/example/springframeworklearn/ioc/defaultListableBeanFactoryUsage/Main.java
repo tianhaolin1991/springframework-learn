@@ -1,6 +1,6 @@
-package com.example.springframeworklearn.defaultListableBeanFactoryUsage;
+package com.example.springframeworklearn.ioc.defaultListableBeanFactoryUsage;
 
-import com.example.springframeworklearn.HelloWorld;
+import com.example.springframeworklearn.ioc.HelloWorld;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
 import org.springframework.core.io.ClassPathResource;

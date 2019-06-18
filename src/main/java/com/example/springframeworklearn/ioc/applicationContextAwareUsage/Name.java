@@ -1,4 +1,4 @@
-package com.example.springframeworklearn.applicationContextAwareUsage;
+package com.example.springframeworklearn.ioc.applicationContextAwareUsage;
 
 import org.springframework.stereotype.Component;
 

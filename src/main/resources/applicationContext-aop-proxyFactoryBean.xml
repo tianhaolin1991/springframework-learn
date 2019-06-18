@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!--定义通知advice-->
+    <bean id="aopTestAdvice" class="com.example.springframeworklearn.aop.proxyFactoryBean.AopTestAdvice"/>
+    <!--需要代理的对象target-->
+    <bean id="target" class="com.example.springframeworklearn.aop.proxyFactoryBean.Target"/>
+    <!--定义advisor,使用正则Advisor-->
+    <bean id="aopAdvisor" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+        <property name="advice" ref="aopTestAdvice"/>
+        <!--仅仅对find开头的方法进行增强-->
+        <property name="patterns" value=".*find.*"/>
+    </bean>
+
+    <bean id="targetProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+        <property name="target" ref="target"/>
+        <property name="interceptorNames">
+            <list>
+                <value>aopAdvisor</value>
+            </list>
+        </property>
+    </bean>
+
+</beans>

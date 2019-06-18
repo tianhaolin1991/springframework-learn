@@ -1,4 +1,4 @@
-package com.example.springframeworklearn;
+package com.example.springframeworklearn.ioc;
 
 import org.springframework.stereotype.Component;
 
